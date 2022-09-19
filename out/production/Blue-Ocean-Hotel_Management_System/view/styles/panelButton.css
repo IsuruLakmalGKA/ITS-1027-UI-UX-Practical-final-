@@ -1,0 +1,28 @@
+/**
+  * @author : Isuru Lakmal G K A
+  * @since : 0.1.0
+**/
+
+.button{
+    -fx-background-color : #9d9d9d;
+    -fx-background-radius: 20 20 0 0;
+    -fx-border-color: #9d9d9d;
+    -fx-border-radius: 20 20 0 0;
+    -fx-text-fill: #000000;
+
+}
+.button:hover{
+    -fx-background-color: #757575;
+    -fx-background-radius: 20 20 0 0;
+    -fx-border-color:#757575 ;
+    -fx-border-radius: 20 20 0 0;
+    -fx-text-fill: #000000;
+}
+.button:focused{
+    -fx-background-color:   #f4f4f4;
+    -fx-background-radius: 20 20 0 0;
+    -fx-border-color:  #f4f4f4;
+    -fx-border-radius: 20 20 0 0;
+    -fx-text-fill: #000000;
+}
+    

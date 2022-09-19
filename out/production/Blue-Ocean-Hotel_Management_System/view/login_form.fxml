@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginformController">
+   <children>
+      <Label alignment="CENTER" layoutX="382.0" layoutY="55.0" text="Welcome" textAlignment="CENTER" textFill="#2175eb" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="Ubuntu" size="60.0" />
+         </font>
+      </Label>
+      <Separator layoutX="308.0" layoutY="119.0" prefWidth="200.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="120.0" />
+      <ImageView fx:id="imgAdmin" fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="225.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="200.0">
+         <image>
+            <Image url="@../assets/admin.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgReceptionist" fitHeight="150.0" fitWidth="200.0" layoutX="496.0" layoutY="217.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="200.0">
+         <image>
+            <Image url="@../assets/receptionist.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="txtOptionname" alignment="CENTER" layoutX="382.0" layoutY="427.0" text="- Blue Ocean Hotel -" textAlignment="CENTER" textFill="#fa3c02" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="450.0">
+         <font>
+            <Font name="Ubuntu" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtmsg" alignment="CENTER" layoutX="382.0" layoutY="507.0" text="Please select one of above main operations to proceed" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>

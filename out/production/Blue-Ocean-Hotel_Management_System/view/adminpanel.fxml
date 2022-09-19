@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminContext" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adminController">
+   <children>
+      <Label alignment="CENTER" layoutX="364.0" layoutY="25.0" text="Admin Panel" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="109.0" layoutY="80.0" onAction="#roomsPanelOnAction" prefHeight="20.0" prefWidth="200.0" stylesheets="@styles/panelButton.css" text="Rooms" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="73.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="197.0" layoutY="80.0" onAction="#mealsPackageOnAction" prefHeight="20.0" prefWidth="600.0" stylesheets="@styles/panelButton.css" text="Meal Package" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="73.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="337.0" layoutY="80.0" onAction="#reportsPanelOnAction" prefHeight="20.0" prefWidth="200.0" stylesheets="@styles/panelButton.css" text="Reports" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="73.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane fx:id="context" layoutX="224.0" layoutY="100.0" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <ImageView fx:id="imgHome" fitHeight="48.0" fitWidth="44.0" layoutX="733.0" layoutY="12.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/house.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

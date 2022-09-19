@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="receptionContext" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.receptionistController">
+   <children>
+      <ImageView fx:id="imgHome" fitHeight="48.0" fitWidth="44.0" layoutX="730.0" layoutY="26.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/house.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="139.0" layoutY="171.0" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #2bc26b; -fx-background-radius: 20;" text="All Rooms" textAlignment="CENTER" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="400.0" layoutY="171.0" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #2bc26b; -fx-background-radius: 20;" text="All Booking" textAlignment="CENTER" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="337.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="711.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="270.0" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #2bc26b; -fx-background-radius: 20;" text="Available Rooms" textAlignment="CENTER" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="400.0" layoutY="270.0" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #2bc26b; -fx-background-radius: 20;" text="Maintaince Rooms" textAlignment="CENTER" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="337.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="711.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="386.0" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #2bc26b; -fx-background-radius: 20;" text="All Guests" textAlignment="CENTER" AnchorPane.leftAnchor="25.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="400.0" layoutY="386.0" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #2bc26b; -fx-background-radius: 20;" text="Meal Plans" textAlignment="CENTER" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="337.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="711.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="03">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="175.0" layoutY="486.0" onAction="#reserveRoomOnAction" prefHeight="48.0" prefWidth="343.0" style="-fx-background-color: yellow; -fx-background-radius: 30;" text="Reserve a Room" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="356.0" layoutY="486.0" prefHeight="48.0" prefWidth="343.0" style="-fx-background-color: yellow; -fx-background-radius: 30;" text="Mark Rooms for Maintainance" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

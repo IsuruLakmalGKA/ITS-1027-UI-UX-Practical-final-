@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerContext" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.receptionPanel.openReceptionContoller">
+    <children>
+      <ImageView fx:id="imgBack" fitHeight="62.0" fitWidth="48.0" layoutX="26.0" layoutY="27.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXTextField labelFloat="true" layoutX="92.0" layoutY="97.0" prefHeight="26.0" prefWidth="595.0" promptText="Name" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+      <JFXTextField labelFloat="true" layoutX="100.0" layoutY="148.0" prefHeight="26.0" prefWidth="595.0" promptText="N I C number" />
+      <JFXTextField labelFloat="true" layoutX="100.0" layoutY="200.0" prefHeight="26.0" prefWidth="595.0" promptText="Phone Number" />
+      <JFXTextField labelFloat="true" layoutX="100.0" layoutY="251.0" prefHeight="26.0" prefWidth="595.0" promptText="Salary" />
+      <JFXTextField labelFloat="true" layoutX="100.0" layoutY="311.0" prefHeight="26.0" prefWidth="595.0" promptText="Address" />
+      <Separator layoutX="74.0" layoutY="365.0" prefWidth="200.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" />
+      <Label layoutX="100.0" layoutY="392.0" prefHeight="34.0" prefWidth="264.0" text="Select Room" />
+      <Label layoutX="100.0" layoutY="434.0" prefHeight="34.0" prefWidth="264.0" text="Select Meal Plan" />
+      <ComboBox layoutX="408.0" layoutY="392.0" prefHeight="34.0" prefWidth="308.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <ComboBox layoutX="408.0" layoutY="434.0" prefHeight="34.0" prefWidth="308.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label layoutX="100.0" layoutY="538.0" text="Total :">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="212.0" layoutY="538.0" text="0.00" textFill="RED">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="474.0" layoutY="514.0" prefHeight="70.0" prefWidth="226.0" style="-fx-background-color: yellow; -fx-background-radius: 30;" text="Place Order">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+</AnchorPane>
